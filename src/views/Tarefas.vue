@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-col cols="12" sm="6">
+    <v-col cols="12">
       <v-text-field label="Outlined" outlined clearable v-model="tarefa" @keyup.enter="handleAddTarefa"></v-text-field>
     </v-col>
     <v-list flat subheader>
