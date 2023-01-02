@@ -12,9 +12,13 @@
         </v-list-item-content>
 
         <v-list-item-action>
-          <v-btn icon @click.stop="handleRemoveTask(tarefa.id)">
+          <!-- <v-btn icon @click.stop="handleRemoveTask(tarefa.id)">
+            
             <v-icon color="red accent-3">mdi-trash-can</v-icon>
-          </v-btn>
+          
+          </v-btn> -->
+
+          <TarefaBtnOptions/>
         </v-list-item-action>
       </template>
     </v-list-item>
@@ -23,7 +27,11 @@
 </template>
 
 <script>
+import TarefaBtnOptions from "./TarefaBtnOptions.vue"
 export default {
+  components:{
+    TarefaBtnOptions
+  },
   props:["tarefa"],
   methods:{
     handleRemoveTask(id){

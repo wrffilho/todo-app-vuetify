@@ -23,7 +23,7 @@
 
 <script>
 // @ is an alias to /src
-import Tarefa from "../components/tarefas/tarefa.vue";
+import Tarefa from "../components/tarefas/Tarefa"
 
 export default {
   components: {
